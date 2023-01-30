@@ -41,3 +41,36 @@ function snack2Function() {
     document.getElementById("form_ex2").style.display = "none";
   }
 }
+
+
+
+
+
+// ESERCIZIO JSnack3 -------------------------------------------------------------------------------------------------------
+
+var currentArray3 = [];
+
+function snack3Function() {
+ 
+  var outputEx3 = document.getElementById("output_ex3");
+  var inputEx3 = document.getElementById("input_ex3").value;
+  inputEx3 = parseInt(inputEx3);
+  
+  let arrayEx3 = "";
+  
+  for (let i = 0; i < inputEx3; i++) {
+    generaArray3();
+    arrayEx3 += "<br>" + "[" + currentArray3 + "]";
+    currentArray3 = [];
+  }
+
+  outputEx3.innerHTML = arrayEx3;
+}
+
+function generaArray3() {
+
+  for (let i = 0; i < 10; i++) {
+    let casualNumber3 = Math.floor(Math.random() * (100)) + 1;
+    currentArray3.push(casualNumber3)
+  }
+}
