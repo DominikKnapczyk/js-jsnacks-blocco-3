@@ -21,10 +21,10 @@
   <hr>
   <div class="container">
     <h2>JSnack1</h2>
+    <p class="margin">Chiedi all'utente un valore minimo ed un valore massimo. Genera un numero casuale all'interno del range fornito dall'utente.</p>
 
-    <!-- INPUT NUMERO DA VERIFICARE -->
+    <!-- INPUT FORM -->
     <form>
-      <p class="margin">Chiedi all'utente un valore minimo ed un valore massimo. Genera un numero casuale all'interno del range fornito dall'utente.</p>
       <p>Valore minimo</p>
       <input type="number" id="input1_ex1">
       <p>Valore massimo</p>
@@ -46,10 +46,10 @@
   <!-- Crea un array vuoto e chiedi all'utente un numero da inserire nell'array. Continua a chiedere i numeri all'utente e a inserirli nell'array fino a quando la somma degli elementi è minore di 50. -->
   <div class="container">
     <h2>JSnack2</h2>
+    <p class="margin">Crea un array vuoto e chiedi all'utente un numero da inserire nell'array. Continua a chiedere i numeri all'utente e a inserirli nell'array fino a quando la somma degli elementi è minore di 50.</p>
 
-    <!-- INPUT NUMERO DA VERIFICARE -->
+    <!-- INPUT FORM -->
     <form id="form_ex2">
-      <p class="margin">Crea un array vuoto e chiedi all'utente un numero da inserire nell'array. Continua a chiedere i numeri all'utente e a inserirli nell'array fino a quando la somma degli elementi è minore di 50.</p>
       <p>Numero</p>
       <input type="number" id="input_ex2">
       <br>
@@ -72,10 +72,10 @@
   <!-- Fai inserire un numero, che chiameremo N, all'utente. Genera N array, ognuno formato da 10 numeri casuali da 1 a 100. Ogni volta che ne crei uno, stampalo. -->
   <div class="container">
     <h2>JSnack3</h2>
+    <p class="margin">Fai inserire un numero, che chiameremo N, all'utente. Genera N array, ognuno formato da 10 numeri casuali da 1 a 100. Ogni volta che ne crei uno, stampalo.</p>
 
-    <!-- INPUT NUMERO DA VERIFICARE -->
+    <!-- INPUT FORM -->
     <form>
-      <p class="margin">Fai inserire un numero, che chiameremo N, all'utente. Genera N array, ognuno formato da 10 numeri casuali da 1 a 100. Ogni volta che ne crei uno, stampalo.</p>
       <p>Numero 'N'</p>
       <input type="number" id="input_ex3">
       <br>
@@ -87,6 +87,56 @@
     <div id="output_ex3"></div>
   </div>
   <hr>
+
+
+
+
+
+  <!-- ESERCIZIO JSnack4 ---------------------------------------------------------------------- -->
+  <!-- Fai inserire un numero, che chiameremo N, all'utente. Genera N array, ognuno formato da 10 numeri casuali da 1 a 100. Ogni volta che ne crei uno, stampalo. -->
+  <div class="container">
+    <h2>JSnack4</h2>
+    <p class="margin">Fai inserire un numero all'utente. Poi continua a chiedere numeri finché la serie è crescente (l'ultimo numero inserito deve essere maggiore del precedente). Alla fine stampali tutti.</p>
+    <!-- INPUT FORM -->
+    <form id="form_ex4">
+      <p>Numero</p>
+      <input type="number" id="input_ex4">
+      <br>
+      <button class="margin" type="button" onclick="snack4Function()">Inserici</button>
+    </form>
+
+    <!-- JS DISPLAY -->
+    <p class="bold">Numeri Stampati:</p>
+    <div id="output_ex4"></div>
+  </div>
+  <hr>
+
+
+
+
+
+  <!-- ESERCIZIO JSnack5 ---------------------------------------------------------------------- -->
+  <!-- Genera un numero a caso compreso tra 1-100. Chiedi all’utente un numero fino a quando non indovina quello generato casualmente. Ogni volta che l'utente inserisce un numero, digli se è maggiore o minore di quello generato. Alla fine stampa il numero di tentativi che ci sono voluti per indovinare il numero generato casualmente. -->
+  <div class="container">
+    <h2>JSnack5</h2>
+    <p class="margin">Genera un numero a caso compreso tra 1-100. Chiedi all’utente un numero fino a quando non indovina quello generato casualmente. Ogni volta che l'utente inserisce un numero, digli se è maggiore o minore di quello generato. Alla fine stampa il numero di tentativi che ci sono voluti per indovinare il numero generato casualmente.</p>
+    <!-- INPUT FORM -->
+    <form>
+      <p>Numero</p>
+      <input type="number" id="input_ex5">
+      <br>
+      <button class="margin" type="button" onclick="snack5Function()">Tenta il numero</button>
+    </form>
+
+    <!-- JS DISPLAY -->
+    <p class="bold"></p>
+    <div id="output_ex5"></div>
+  </div>
+  <hr>
     
+
+
+
+  
 </body>
 </html>

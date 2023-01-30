@@ -56,7 +56,7 @@ function snack3Function() {
   var inputEx3 = document.getElementById("input_ex3").value;
   inputEx3 = parseInt(inputEx3);
   
-  let arrayEx3 = "";
+  var arrayEx3 = "";
   
   for (let i = 0; i < inputEx3; i++) {
     generaArray3();
@@ -72,5 +72,58 @@ function generaArray3() {
   for (let i = 0; i < 10; i++) {
     let casualNumber3 = Math.floor(Math.random() * (100)) + 1;
     currentArray3.push(casualNumber3)
+  }
+}
+
+
+
+
+
+// ESERCIZIO JSnack4 -------------------------------------------------------------------------------------------------------
+
+var lastNumber4 = -Infinity;
+var numberList4 = "";
+
+function snack4Function() {
+
+  var outputEx4 = document.getElementById("output_ex4");
+  var inputEx4 = document.getElementById("input_ex4").value;
+  inputEx4 = parseInt(inputEx4);
+
+  if (inputEx4 > lastNumber4) {
+    numberList4 += "<br>" + "[" + inputEx4 + "]"
+    console.log()
+    lastNumber4 = inputEx4;
+  } else {
+    outputEx4.innerHTML = numberList4;
+    document.getElementById("form_ex4").style.display = "none";
+  }
+}
+
+
+
+
+
+// ESERCIZIO JSnack5 -------------------------------------------------------------------------------------------------------
+
+let casualNumber5 = Math.floor(Math.random() * (100)) + 1;
+var contatore5 = 0;
+
+function snack5Function() {
+
+  var outputEx5 = document.getElementById("output_ex5");
+  var inputEx5 = document.getElementById("input_ex5").value;
+  inputEx5 = parseInt(inputEx5);
+
+  if (casualNumber5 > inputEx5) {
+    contatore5++;
+    outputEx5.innerHTML = "Il numero a cui ho pensato è più grande, ritenta!";
+  } else if (casualNumber5 < inputEx5) {
+    contatore5++;
+    outputEx5.innerHTML = "Il numero a cui ho pensato è più piccolo, ritenta!";
+  } else {
+    contatore5++;
+    outputEx5.innerHTML = "Hai indovinato!" + "<br>" + "Numero di tentativi: " + contatore5;
+    
   }
 }
